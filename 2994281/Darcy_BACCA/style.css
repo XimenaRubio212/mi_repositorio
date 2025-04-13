@@ -1,0 +1,12 @@
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px;
+    box-sizing: border-box;
+}
+
+.seccion{
+    padding: 10px;
+    border: 10px solid green;
+}

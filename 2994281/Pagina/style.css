@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    background-color: rgb(235, 245, 251 );
+    color: black;
+}
+
+header {
+    background-color: rgb(235, 245, 251 );
+    padding: 20px 0;
+}
+
+.Navegar {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Inicio {
+    float: left; /*online-block- se omite debido al float. si - float - tiene un valor distinto 
+    de - none - el cuadro es floated y display se trata como block*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Inicio img {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.Inicio h3 {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Final {
+    float: right;
+    display: inline-block;
+}
+
+.Final a {
+    text-decoration: none;
+    color: #717171 ;
+    margin-left: 20px;
+    font-size: small;
+    line-height: 35px;
+}
+
+.Final button {
+    background-color: rgb(96, 209, 255 );
+    color: #717171;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: small;
+    margin-left: 20px;
+}
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+}
+
+.contenedor {
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+
+.contenedor h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: black;
+}
+
+.contenedor p {
+    font-size: 16px;
+    color: #717171 ;
+    margin-top: 20px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: rgb(96, 209, 255 );
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.Imagen_Contai {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.Imagen_Contai img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}

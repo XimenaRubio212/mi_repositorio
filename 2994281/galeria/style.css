@@ -1,0 +1,353 @@
+/* 1. se aplica colores hexadecimales a elementos de una card*/
+body {
+    margin: 0;
+    background-color: #d5d5d5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*3. se aqplica un color de fondo rgbatransparente a la galeria*/  
+.galeria {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.12); /*fondo transparente*/
+/*4. se usa la propiedad backgound para agregar una imagen de fondo*/
+    background-image: url(imagenes/dragon.jpg); 
+    /*5. Establece la posicion del fondo con background-position*/
+    background-position: center;
+    /*6. se ajusta el tamaño de un fondo con background-si-ze*/
+    background-size: cover;
+    /*7. se explora el efecto de desplazamiento con bavground-attachment*/
+    background-attachment: fixed;
+    /*16. se usa unidades vh y vw para definir la altura y el ancho de la galeria*/
+    height: 90vh;
+    width: 90vw;
+    margin: auto;
+    overflow-y: auto;
+}
+
+/*14. se usa em para definir margenes y paddings de las cards*/
+.card {
+    display: inline-block;
+    width: 20%; /* para que quepan 4 por fila con márgenes */
+    margin: 1em; /*margen usando em*/
+    padding: 1em; /*padding usando em*/
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    vertical-align: top;
+    /*15. se compara el comportamiento entre px, em y rem en un mismo contenedor*/
+    font-size: 1rem; /*tamaño de fuente de base*/
+    line-height: 1.5rem; /*espaciado entre lineas*/
+}
+
+/*11. se define una fuente personalizada usando google fonts*/
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem; /*12. cambia el tamaño de la fuente*/
+    font-style: normal; /* estilo de fuente*/
+    font-weight: bold; /*peso de fuente*/
+}
+
+/*13. se experimenta con unidades rem en los parrafos de las cards*/
+p {
+    font-size: 1rem; /*Tamaño de fuente en rem*/
+}
+
+/*17. se inserta una imagen y aplica redimensionamiento con max-width y height: auto*/
+.card img {
+    max-width: 100%; /*se redimensionan la  imagen*/
+    height: auto;
+}
+
+/*18. se usa object-fit para manipular el contenido visual de imagenes en las card*/
+.card img.fit-cover {
+    object-fit: cover; /*se ajusta la imagen para cubrir el contenedor*/
+    width: 100%;
+    height: 150%;
+}
+ 
+/*2. modifica 5 componentes (card) y una combinacion RGB por cada card*/
+.Dokkan { 
+    background-color: rgb(230, 230, 250); /*lavander en rgb*/ 
+    color: rgb(138, 43, 226);  /*purple en rgb*/
+}
+
+.dokkan { 
+    background-color: rgb(224, 255, 255); /*ligth cyan en rgb*/ 
+    color: rgb(0, 128, 128); /*teal en rgb*/ 
+}
+
+.Artwork { 
+    background-color: rgb(255, 228, 225); /* Misty Rose en RGB */
+    color: rgb(128, 0, 0); /* Maroon en RGB */
+}
+
+.Androide_19 { 
+    background-color: rgb(255, 255, 240); /* Ivory en RGB */
+    color: rgb(128, 128, 0); /* Olive en RGB */
+}
+
+.Androide_13 {
+    background-color: rgb(245, 245, 245); /* White Smoke en RGB */
+    color: rgb(0, 0, 128); /* Navy en RGB */
+}
+
+.Androide_16 {
+    background-color: rgb(125, 206, 160); /*medium aquamarine*/
+    color: rgb(39, 174, 96); /*emerald*/
+}
+
+.Androide_18 {
+    background-color: rgb(41, 128, 185); /*belize hole*/
+    color: rgb(21, 67, 96);  /* midninht blue*/
+}
+
+.Dende {
+    background-color: rgb(82, 190, 128); /*light green sea*/
+    color: rgb(97, 106, 107);  /*slate gray*/
+}
+
+.Babidi {
+    background-color: rgb(250, 215, 160); /*melon pastel*/
+    color: rgb(230, 126, 34);  /*carrot*/
+}
+
+.Bardock {
+    background-color: rgb(72, 201, 176); /*medium turquoise*/
+    color: rgb(14, 102, 85);  /*deep teal*/
+}
+
+/*10. se aplica estilos de texto (ext-transform, letter-spacing, text-shadow) a una card*/
+.Beerus {
+    background-color: rgb(52, 152, 219); /*peter river*/
+    color: rgb(122, 47, 151);  /*amethyst*/
+}
+
+.Bulma {
+    /* background-color: rgb(231, 76, 60); 
+    color: rgb(249, 231, 159);   */
+    text-transform: uppercase; /*texto en mayusculas*/
+    letter-spacing: 2px; /*espaciado entre letras*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*sombra de texto*/
+}
+
+.BuuGordo {
+    background-color: rgb(246, 221, 204); /*melocoton palido*/
+    color: rgb(175, 122, 197);  /*wisteria*/
+}
+
+.Celula {
+    background-color: rgb(91, 44, 111); /*plum oscuro*/
+    color: rgb(217, 177, 233);  /*dark amethysts*/
+}
+
+.Chichi {
+    background-color: rgb(236, 112, 99); /*light alizarin*/
+    color: rgb(192, 57, 43); /*alizarin*/
+}
+
+.dende {
+    background-color: rgb(146, 43, 33); /*pomegranate*/
+    color: rgb(208, 211, 212);  /*cloud*/
+}
+
+.Dispo {
+    background-color: rgb(203, 67, 53); /*pomegranate*/
+    color: rgb(44, 62, 80); /*medninght blue*/
+}
+
+.Dodoria {
+    background-color: rgb(99, 57, 116); /*dark amethysts*/
+    color: rgb(245, 139, 219); /*light pink*/
+}
+
+.Dr_Gero {
+    background-color: rgb(110, 44, 0); /*Brown Sugar*/
+    color: rgb(202, 111, 30);   /*Goldenrod*/
+}
+
+.Yamcha {
+    background-color: rgb(220, 118, 51); /*Orange*/
+    color: rgb(52, 73, 94);   /*Midnight Blue*/
+}
+
+.Freezer {
+    background-color: rgb(229, 231, 233); /*Cloud*/
+    color: rgb(175, 122, 197);  /*Amethyst*/
+}
+
+.Ginyu {
+    background-color: rgb(52, 73, 94); /*Midnight Blue*/
+    color: rgb(195, 155, 211);   /*Lavender*/
+}
+
+.Ginyu_force {
+    background-color: rgb(248, 196, 113); /*Light Goldenrod*/
+    color: rgb(93, 109, 126);  /*Slate Gray*/
+}
+
+.Gohan {
+    background-color: rgb(44, 62, 80); /*Midnight Blue*/
+    color: rgb(253, 253, 253);  /*Purple*/
+}
+
+/*8. se diseña una gradiante lineal con colores de eleccion a una card*/
+.Goku {
+    /* background-color: rgb(202, 111, 30);  */
+    background: linear-gradient(to bottom, #ff7f50, #ffa07a); /*gradiante naranja*/
+    color: white;  
+}
+
+.Gotenks {
+    background-color: rgb(195, 155, 211); /*Lavender*/
+    color: rgb(86, 101, 115);  /*Grayish Blue*/
+}
+
+.Gran_kaio_shin{
+    background-color: rgb(175, 122, 197); /*Amethyst*/
+    color: rgb(52, 73, 94);  /*Midnight Blue*/
+}
+
+.Gran_kaio_sama {
+    background-color: rgb(241, 196, 15); /*Golden*/
+    color: rgb(214, 137, 16);  /*Dark Goldenrod*/
+}
+
+.Grand_priest {
+    background-color: rgb(52, 152, 219); /*Belize Hole*/
+    color: rgb(245, 245, 245);  /*Azure*/
+}
+
+.Jiren {
+    background-color: rgb(192, 57, 43); /*Alizarin*/
+    color: rgb(110, 44, 0);  /*Pomegranate*/
+}
+
+.Kaio_del_este {
+    background-color: rgb(251, 147, 225); /*Light Pink*/
+    color: rgb(128, 45, 108);  /*Purple*/
+}
+
+.Kaio_del_norte {
+    background-color: rgb(174, 214, 241); /*Light Sky Blue*/
+    color: rgb(68, 141, 190);  /*Steel Blue*/
+}
+
+.Kaio_del_oeste {
+    background-color: rgb(213, 66, 177); /*Medium Violet Red*/
+    color: rgb(123, 44, 103);  /*Purple Heart*/
+}
+
+.Kaio_shin_del_este {
+    background-color: rgb(26, 188, 156); /*Turquoise*/
+    color: rgb(17, 122, 101);  /*Deep Green*/
+}
+
+.Kaio_shin_del_norte {
+    background-color: rgb(34, 216, 180); /*Turquoise*/
+    color: rgb(142, 68, 173);   /*Amethyst*/
+}
+
+.Kaio_shin_del_sur {
+    background-color: rgb(220, 118, 51); /*Orange*/
+    color: rgb(30, 132, 73);  /*Forest Green*/
+}
+
+.Kaio_shin_del_oeste {
+    background-color: rgb(220, 118, 51); /*Orange*/
+    color: rgb(169, 50, 38);  /*Cinnamon*/
+}
+
+.Kibito {
+    background-color: rgb(220, 118, 51); /*Orange*/
+    color: rgb(11, 83, 69);  /*Turquoise*/
+}
+
+.Kibito_shin {
+    background-color: rgb(26, 188, 156); /*Turquoise*/
+    color: rgb(131, 64, 20);  /*Orange*/
+}
+
+.Krilin {
+    background-color: rgb(235, 152, 78); /*Dark Khaki*/
+    color: rgb(52, 73, 94);  /*Midnight Blue*/
+}
+
+.Lunch {
+    background-color: rgb(52, 73, 94); /*Midnight Blue*/
+    color: rgb(236, 240, 241);   /*Cloud*/
+}
+
+.Marcarita {
+    background-color: rgb(52, 73, 94); /*Midnight Blue*/
+    color: rgb(235, 152, 78);  /*Dark Khaki*/
+}
+
+.Mr_satan {
+    background-color: rgb(93, 109, 126); /*Slate Gray*/
+    color: rgb(220, 118, 51);  /*Orange*/
+}
+
+.Nail {
+    background-color: rgb(255, 136, 226); /*Pink*/
+    color: rgb(39, 174, 96);  /*Emerald*/
+}
+
+.Picolo {
+    background-color: rgb(52, 152, 219); /*Belize Hole*/
+    color: rgb(125, 60, 152);  /*Purple*/
+}
+
+.Raditz {
+    background-color: rgb(237, 187, 153); /*Peach*/
+    color: rgb(110, 44, 0);  /*Pomegranate*/
+}
+
+.Roshi {
+    background-color: rgb(214, 137, 16); /*Gold*/
+    color: rgb(120, 66, 18);  /*Copper*/
+}
+
+.Tenshinhan {
+    background-color: rgb(192, 57, 43); /*Alizarin*/
+    color: rgb(100, 30, 22);  /*Dark Red*/
+}
+
+.Toppo {
+    background-color: rgb(231, 76, 60); /*Cinnabar*/
+    color: rgb(44, 62, 80);  /*Charcoal*/
+}
+
+.Trunks {
+    background-color: rgb(69, 179, 157); /*Medium Turquoise*/
+    color: rgb(20, 90, 50);   /*Forest Green*/
+}
+
+/*9. se crea gradiente radial y aplicalo a una card*/
+.Vegeta {
+    /* background-color: rgb(52, 152, 219);  */
+    background: radial-gradient(circle, #00008b, #1e90ff); /*gradiente azul*/
+    color: white;  
+}
+
+.Vermoud {
+    background-color: rgb(46, 134, 193); /*Pacific Blue*/
+    color: rgb(148, 49, 38);  /*Cinnamon*/
+}
+
+.Whis {
+    background-color: rgb( 192, 57, 43); /*Alizarin*/
+    color: rgb(100, 30, 22);  /*Dark Red*/
+}
+
+.Zarbon {
+    background-color: rgb(215, 189, 226); /*Lavender*/
+    color: rgb(81, 46, 95);   /*Purple Heart*/
+}
+
+.Zeno {
+    background-color: rgb(93, 173, 226); /*Vivid Sky Blue*/
+    color: rgb(81, 46, 95);  /*Purple Heart*/
+}
