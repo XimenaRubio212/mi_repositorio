@@ -15,9 +15,9 @@ body {
     /*5. Establece la posicion del fondo con background-position*/
     background-position: center;
     /*6. se ajusta el tamaño de un fondo con background-si-ze*/
-    background-size: cover;
+    background-size: auto;
     /*7. se explora el efecto de desplazamiento con bavground-attachment*/
-    background-attachment: fixed;
+    background-attachment: scroll;
     /*16. se usa unidades vh y vw para definir la altura y el ancho de la galeria*/
     height: 90vh;
     width: 90vw;
@@ -35,7 +35,7 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     text-align: center;
     font-style: italic;
-    font-weight: bold;
+    font-weight: normal;
     vertical-align: top;
     /*15. se compara el comportamiento entre px, em y rem en un mismo contenedor*/
     font-size: 1rem; /*tamaño de fuente de base*/
